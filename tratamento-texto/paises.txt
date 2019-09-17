@@ -1,0 +1,182 @@
+﻿1	Dinamarca	88
+2	Nova Zelândia	87
+3	Finlândia	85
+3	Singapura	85
+3	Suécia	85
+3	Suíça	85
+7	Noruega	84
+8	Holanda	82
+9	Canadá	81
+9	Luxemburgo	81
+11	Alemanha	80
+11	Reino Unido	80
+13	Austrália	77
+14	Áustria	76
+14	Hong Kong	76
+14	Islândia	76
+17	Bélgica	75
+18	Estônia	73
+18	Irlanda	73
+18	Japão	73
+21	França	72
+22	Estados Unidos	71
+23	Emirados Árabes Unidos	70
+23	Uruguai	70
+25	Barbados	68
+25	Butão	68
+27	Chile	67
+28	Seicheles	66
+29	Bahamas	65
+30	Portugal	64
+31	Brunei Darussalam	63
+31	Taiwan	63
+33	Catar	62
+34	Botsuana	61
+34	Israel	61
+36	Polônia	60
+36	Eslovênia	60
+38	Chipre	59
+38	República Tcheca	59
+38	Lituânia	59
+41	Geórgia	58
+41	Letônia	58
+41	São Vicente e Granadinas	58
+41	Espanha	58
+45	Cabo Verde	57
+45	Dominica	57
+45	Coreia do Sul	57
+48	Costa Rica	56
+48	Ruanda	56
+50	Santa Lúcia	55
+51	Malta	54
+52	Namíbia	53
+53	Granada	52
+53	Itália	52
+53	Omã	52
+56	Maurícia	51
+57	Eslováquia	50
+58	Jordânia	49
+58	Arábia Saudita	49
+60	Croácia	48
+61	Cuba	47
+61	Malásia	47
+61	Romênia	47
+64	Hungria	46
+64	São Tomé e Príncipe	46
+64	Vanuatu	46
+67	Grécia	45
+67	Montenegro	45
+67	Senegal	45
+70	Bielorrússia	44
+70	Jamaica	44
+70	Ilhas Salomão	44
+73	Marrocos	43
+73	África do Sul	43
+73	Suriname	43
+73	Tunísia	43
+77	Bulgária	42
+78	Burkina Faso	41
+78	Gana	41
+78	Índia	41
+78	Kuwait	41
+78	Lesoto	41
+78	Trinidad e Tobago	41
+78	Turquia	41
+85	Argentina	40
+85	Benim	40
+87	China	39
+87	Sérvia	39
+89	Bósnia e Herzegovina	38
+89	Indonésia	38
+89	Sri Lanka	38
+89	Suazilândia	38
+93	Gâmbia	37
+93	Guiana	37
+93	Kosovo	37
+93	Macedônia	37
+93	Mongólia	37
+93	Panamá	37
+99	Albânia	36
+99	Bahrein	36
+99	Colômbia	36
+99	Filipinas	36
+99	Tanzânia	36
+99	Tailândia	36
+105	Argélia	35
+105	Armênia	35
+105	Brasil	35
+105	Costa do Marfim	35
+105	Egito	35
+105	El Salvador	35
+105	Peru	35
+105	Timor-Leste	35
+105	Zâmbia	35
+114	Equador	34
+114	Etiópia	34
+114	Níger	34
+117	Moldávia	33
+117	Paquistão	33
+117	Vietnã	33
+120	Libéria	32
+120	Malaui	32
+120	Mali	32
+120	Ucrânia	32
+124	Djibouti	31
+124	Gabão	31
+124	Cazaquistão	31
+124	Maldivas	31
+124	Nepal	31
+129	República Dominicana	30
+129	Serra Leoa	30
+129	Togo	30
+132	Bolívia	29
+132	Honduras	29
+132	Quirguistão	29
+132	Laos	29
+132	Mianmar	29
+132	Paraguai	29
+138	Guiné	28
+138	Irã	28
+138	Líbano	28
+138	México	28
+138	Papua-Nova Guiné	28
+138	Rússia	28
+144	Comores	27
+144	Guatemala	27
+144	Quênia	27
+144	Mauritânia	27
+144	Nigéria	27
+149	Bangladesh	26
+149	República Centro-Africana	26
+149	Uganda	26
+152	Azerbaijão	25
+152	Camarões	25
+152	Madagáscar	25
+152	Nicarágua	25
+152	Tajiquistão	25
+157	Eritreia	24
+158	Moçambique	23
+158	Uzbequistão	23
+160	Zimbabué	22
+161	Camboja	20
+161	República Democrática do Congo	20
+161	Haiti	20
+161	Turquemenistão	20
+165	Angola	19
+165	Chade	19
+165	Congo	19
+168	Iraque	18
+168	Venezuela	18
+170	Burundi	17
+170	Líbia	17
+172	Afeganistão	16
+172	Guiné Equatorial	16
+172	Guiné-Bissau	16
+172	Sudão	16
+176	Coreia do Norte	14
+176	Iémen	14
+178	Sudão do Sul	13
+178	Síria	13
+180	Somália	10
+		
+Nenhum país atingiu a nota máxima no IPC.		
