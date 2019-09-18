@@ -1,5 +1,4 @@
-﻿Wordnet Affect BR	Valência
-abalado	-
+﻿abalado	-
 abatido	-
 abominação	-
 abrandamento	+
