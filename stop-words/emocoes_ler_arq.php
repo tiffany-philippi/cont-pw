@@ -2,7 +2,7 @@
 // Leitura de arquivo TXT
 $caminho = getcwd();
 echo "<hr>Arquivo processado...";
-$arquivo = "arquivo_emocao2.txt";
+$arquivo = "leitura.txt";
 echo "<br>Caminho: " . $caminho;
 echo "<br>Arquivo: " . $arquivo;
 
@@ -30,7 +30,7 @@ foreach($array_arq as $key1 => $frase){
 
 // Leitura do arquivo STOP WORDS
 echo "<hr><br>Stop Words...";
-$arquivo = "stopwords.txt";
+$arquivo = "stop-words.txt";
 echo "<br>Arquivo: " . $arquivo;
 
 $array_stop_words = file($caminho . "\\" . $arquivo,FILE_TEXT| FILE_SKIP_EMPTY_LINES|FILE_IGNORE_NEW_LINES);
@@ -56,7 +56,7 @@ echo "<br>" . $lista_retiradas;
 $array_final = array();
 
 echo "<hr><br>Base de emoções WordNetAffectBR...";
-$arquivo = "wordnetaffectbr_valencia.txt";
+$arquivo = "valencia.txt";
 echo "<br>Arquivo: " . $arquivo;
 
 $array_emocoes_file = file($caminho . "\\" . $arquivo,FILE_TEXT| FILE_SKIP_EMPTY_LINES|FILE_IGNORE_NEW_LINES);
