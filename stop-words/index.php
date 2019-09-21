@@ -2,9 +2,17 @@
 //pega o diretório atual:
 $diretorio = getcwd();
 
+//variáveis de stop words
 $stopWords = "stop-words.txt";
-$leitura = "leitura.txt";
-$valencia = "valencia.txt";
+$arq_words = file($diretorio . "\\" . $stopWords, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES | FILE_TEXT);
+$qtd_palavras = 0;
+
+echo "Arquivo stop words: " . "<br>Caminho: " . $diretorio . "<br>Arquivo: " . $stopWords;
+
+//variáveis de emoções
+$leitura = "emocoes.txt";
+$arq_leitura = fopen($diretorio . "\\" . $leitura, "r");
+$array_emocoes = array();
 $count = 0;
 $count_retiradas = 0;
 $lista_retiradas = "";
@@ -12,27 +20,29 @@ $stg_positiva = "";
 $stg_negativa = "";
 $cont_positiva = 0;
 $cont_negativa = 0;
-$arq_array = array();
-$arq_words = file($diretorio . "\\" . $stopWords, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES | FILE_TEXT);
-$arq_leitura = fopen($diretorio . "\\" . $leitura, "r");
+
+//variáveis de valencia
+$valencia = "valencia.txt";
 $arq_valencia = file($diretorio . "\\" . $valencia, FILE_TEXT | FILE_SKIP_EMPTY_LINES);
 
 while (!feof($arq_leitura)) {
   $linha = fgets($arq_leitura);
-  array_push($arq_array, explode(' ', $linha));
+  array_push($array_emocoes, explode(' ', $linha));
 }
 
-foreach($arq_array as $key1 => $frase) {
+foreach($array_emocoes as $key1 => $frase) {
   foreach($frase as $key => $palavra) {
     if(array_search($palavra, $arq_words)) {
-      unset($arq_array[$key1][$key]);
+      unset($array_emocoes[$key1][$key]);
       $count_retiradas++;
       $lista_retiradas .= $palavra . ", ";
     }
   }
 }
 
-echo "\n com " . count($arq_valencia) . " palavras de emoção."; 
+echo "<br> com " . count($arq_valencia) . " palavras de emoção."; 
+
+$array_valencia = array();
 
 foreach ($arq_valencia as $key1 => $frase) {
   foreach ($frase as $key => $palavra) {
@@ -50,7 +60,7 @@ foreach ($arq_valencia as $key1 => $frase) {
 echo "Contas negativas: " . $cont_negativa;
 fclose($arq_leitura);
 echo "<textarea>";
-print_r($arq_array);
+print_r($array_emocoes);
 echo "</textarea>";
 
 ?>
@@ -85,14 +95,14 @@ echo "</textarea>";
       <?php
       //  while(!feof($arq)) {
       //    $linha = fgets($arq) . "<br>";
-      //    array_push($arq_array, explode(chr(9), $linha));
-      //    foreach ($arq_array as $key => $value) {
+      //    array_push($array_emocoes, explode(chr(9), $linha));
+      //    foreach ($array_emocoes as $key => $value) {
       //      echo $value;
       //    }
       // }
       // fclose($arq);
       // echo "<pre>";
-      // print_r($arq_array);
+      // print_r($array_emocoes);
       // echo "</pre>";
       ?>    
     </div>
