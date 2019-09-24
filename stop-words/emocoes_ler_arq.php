@@ -14,6 +14,7 @@ while(!feof($arq)){
 	$new_array = explode(" ",trim(strtolower($linha)));
 	$quant_pal += count($new_array);
 	array_push($array_arq,$new_array);
+	//imprime cada linha do arquivo
 	echo "<br>" . $linha;
 }
 fclose($arq);
