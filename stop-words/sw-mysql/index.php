@@ -1,7 +1,9 @@
 <?php
-//pega o diretório atual:
+//Pega o diretório atual:
+$dir = getcwd();
+//Muda o diretório: 
+chdir('../');
 $diretorio = getcwd();
-
 //variáveis de leitura
 $leitura = "emocoes.txt";
 $arq_leitura = fopen($diretorio . "\\" . $leitura, "r");
@@ -10,9 +12,6 @@ $count = 0;
 $count_retiradas = 0;
 $lista_retiradas = "";
 $qtd_palavras = 0;
-
-
-
 
 //variáveis de stop words
 $stopWords = "stop-words.txt";
@@ -116,7 +115,7 @@ $cont_negativa = 0;
       foreach ($array_leitura as $key1 => $frase) {
         foreach ($frase as $key => $palavra) {
           $variavel_search = array_search($palavra, $arq_words);
-          if (false !== $variavel_search) {
+          if ($variavel_search) {
             unset($array_leitura[$key1][$key]);
             $palavras_ret++;
             $lista_retiradas .= $palavra . "<br>";
@@ -136,12 +135,12 @@ $cont_negativa = 0;
       echo "<p> com <b>" . count($arq_valencia) . "</b> palavras de emoção.";
 
       foreach($arq_valencia as $emocoes) {
-        $qtd_linhas_valencia = explode(' ', $emocoes);
+        $qtd_linhas_valencia = explode(chr(9), $emocoes);
         $cont_emocoes++;
         $array_valencia[$qtd_linhas_valencia[0]] = $qtd_linhas_valencia[1];
       }
       
-      foreach ($arq_valencia as $key1 => $frase) {
+      foreach ($array_leitura as $key1 => $frase) {
         foreach ($frase as $key2 => $palavra) {
           if (array_key_exists($palavra, $arq_valencia)) {
             if ($arq_valencia[$palavra] == '+') {
